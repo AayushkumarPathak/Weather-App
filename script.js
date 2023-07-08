@@ -1,7 +1,7 @@
 const key = '896db6055af273c73bb7eb117b233131';
         async function search(){
             const phrase = document.querySelector('input[type="text"]').value;
-            const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}`);
+            const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${key}`);
             const data = await response.json();
             // console.log(data);
             //if you type anything show suggestions iusing js
