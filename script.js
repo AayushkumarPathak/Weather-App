@@ -187,7 +187,7 @@ async function showWeather(lat, lon, name) {
   document.getElementById('feelsLikeValue').innerHTML = feelLike + '&#8451;';
   document.getElementById('windValue').innerHTML = wind + 'km/hr';
   document.getElementById('humidityValue').innerHTML = humidity + '%';
-  document.getElementById('icon').src = `//openweathermap.org/img/wn/${icon}@4x.png`;
+  document.getElementById('icon').src = `//openweathermap.org/img/wn/${icon}.png`;
   document.querySelector('form').style.display = 'none';
   document.getElementById('weather').style.display = 'block';
 }
