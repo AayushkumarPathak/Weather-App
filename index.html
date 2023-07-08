@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome_Weather</title>
+    <link rel="icon" href="img/icondc.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="search city...">
+        <ul>
+            
+        </ul>
+    </form>
+    <div id="weather" style="display: none;">
+        <img src="" alt="" id="icon">
+        <h1 id="degrees">20&#8451;</h1> 
+        <h2 id="city">Stockholm</h2>
+        <button id="change">Change city</button>
+        <div class="info">
+            <div>
+                <h3>Wind</h3>
+                <div id="windValue" class="value">2<span>km/hr</span></div>
+                
+            </div>
+            <div>
+                <h3>Feels like</h3>
+                <div id="feelsLikeValue" class="value">2<span>km/hr</span></div>
+                
+            </div>
+            <div>
+                <h3>Humidity</h3>
+                <div id="humidityValue" class="value">2<span>km/hr</span></div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <div id="footer">
+        Developed & Managed By AK Copyright@2023
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
