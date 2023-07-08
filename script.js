@@ -27,6 +27,11 @@ async function showWeather(lat, lon, name) {
     `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`
   );
   const data = await response.json();
+  if (!data || !data.main || !data.weather || data.weather.length === 0) {
+    // Handle the error condition when required data is missing
+    console.error('Weather data is missing or has an invalid format.');
+    return;
+  }
   const temp = Math.round(data.main.temp);
   const feelLike = Math.round(data.main.feels_like);
   const humidity = Math.round(data.main.humidity);
